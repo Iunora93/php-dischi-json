@@ -15,7 +15,11 @@
         <h1>Dischi</h1>
         <ul>
             <li v-for="disco in dischi">
-                <h3>{{disco.author}}</h3>
+                <img :src="disco.poster" alt="">
+                <h3>{{disco.title}}</h3>
+                <small>{{disco.author}}</small>
+                <h3>{{disco.year}}</h3>
+
             </li>
         </ul>
     </div>
