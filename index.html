@@ -12,16 +12,24 @@
 </head>
 <body>
     <div id="app">
-        <h1>Dischi</h1>
-        <ul>
-            <li v-for="disco in dischi">
-                <img :src="disco.poster" alt="">
-                <h3>{{disco.title}}</h3>
-                <small>{{disco.author}}</small>
-                <h3>{{disco.year}}</h3>
+        <header>
+            <div class="container-header">
+                <img class="logo-spotify" src="img/logo-small.svg" alt="">
+            </div>
+        </header>
+        <main>
+            <div class="container-main">
+                <ul>
+                    <li v-for="disco in dischi">
+                        <img :src="disco.poster" alt="">
+                        <h3>{{disco.title}}</h3>
+                        <small>{{disco.author}}</small>
+                        <h3>{{disco.year}}</h3>
 
-            </li>
-        </ul>
+                    </li>
+                </ul>
+            </div>
+        </main>
     </div>
     <script src="js/main.js"></script>
 </body>
